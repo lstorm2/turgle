@@ -1,0 +1,57 @@
+{
+    "prompt" : "An American would..",
+    "first"  : "1.jpg",
+    "images": 
+        {
+        "path" : "images/",
+        "image": 
+        [
+            {
+                "name": "1.jpg",
+                "caption": "Man misses bus",
+            },
+            {
+                "name": "A.jpg",
+                "caption": "Wait for the next bus",
+            },
+            {
+                "name": "B.jpg",
+                "caption": "Call a taxi",
+            },
+            {
+                "name": "C.jpg",
+                "caption": "Steal a car",
+            },
+        ],
+    },
+    "screens":
+        {
+        "screen":
+        [
+            {
+                "main": "1.jpg",
+                "iA": "A.jpg",
+                "iB": "B.jpg",
+                "iC": "C.jpg",
+            },
+            {
+                "main": "A.jpg",
+                "iA": "A1.jpg",
+                "iB": "A2.jpg",
+                "iC": "A3.jpg",
+            },
+            {
+                "main": "B.jpg",
+                "iA": "B1.jpg",
+                "iB": "B2.jpg",
+                "iC": "B3.jpg",
+            },
+            {
+                "main": "C.jpg",
+                "iA": "C1.jpg",
+                "iB": "C2.jpg",
+                "iC": "C3.jpg",
+            },
+        ]
+    }
+}
