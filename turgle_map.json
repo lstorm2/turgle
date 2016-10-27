@@ -1,10 +1,12 @@
 {
     "prompt" : "An American would..",
     "first"  : "1.jpg",
-    "images": 
+    "success_str": "Congratulations! You understand American culture!",
+    "fail_str": "Sorry, you don't understand American Culture. Please try again.",
+    "images":
         {
         "path" : "images/",
-        "image": 
+        "image":
         [
             {
                 "name": "1.jpg",
@@ -21,6 +23,285 @@
             {
                 "name": "C.jpg",
                 "caption": "Steal a car",
+            },
+            {
+                "name": "A1.jpg",
+                "caption": "Get on the next bus",
+            },
+            {
+                "name": "A2.jpg",
+                "caption": "Miss the next bus as well",
+            },
+            {
+                "name": "A3.jpg",
+                "caption": "Meet woman at bus stop",
+            },
+            {
+                "name": "B1.jpg",
+                "caption": "Take taxi directly to job interview",
+            },
+            {
+                "name": "B2.jpg",
+                "caption": "Ride in taxi but not have enough money to pay",
+            },
+            {
+                "name": "B3.jpg",
+                "caption": "Make taxi stop at McDonalds",
+            },
+            {
+                "name": "C1.jpg",
+                "caption": "Take stolen car to job interview",
+            },
+            {
+                "name": "C2.jpg",
+                "caption": "Get in car chase with police",
+            },
+            {
+                "name": "C3.jpg",
+                "caption": "Stop at McDonalds with stolen car",
+            },
+            {
+                "name": "A1I.jpg",
+                "caption": "Make new friends on the bus",
+            },
+            {
+                "name": "A1II.jpg",
+                "caption": "Take bus directly to job interview",
+            },
+            {
+                "name": "A1III.jpg",
+                "caption": "Contract illness from bus door handle",
+            },
+            {
+                "name": "A2I.jpg",
+                "caption": "Try hitchhiking to job interview",
+            },
+            {
+                "name": "A2II.jpg",
+                "caption": "Jog to job interview",
+            },
+            {
+                "name": "A2III.jpg",
+                "caption": "Shrug, go to McDonalds instead",
+            },
+            {
+                "name": "A3I.jpg",
+                "caption": "Make an inappropriate remark",
+            },
+            {
+                "name": "A3II.jpg",
+                "caption": "Have a polite conversation",
+            },
+            {
+                "name": "A3III.jpg",
+                "caption": "Ask woman to go to McDonalds",
+            },
+            {
+                "name": "B1I.jpg",
+                "caption": "Leave briefcase in taxi",
+            },
+            {
+                "name": "B1II.jpg",
+                "caption": "Offend taxi driver and be taken to the wrong address",
+            },
+            {
+                "name": "B1III.jpg",
+                "caption": "Arrive early to job interview",
+            },
+            {
+                "name": "B2I.jpg",
+                "caption": "Kick man out of taxi",
+            },
+            {
+                "name": "B2II.jpg",
+                "caption": "Take man to persuasive friends",
+            },
+            {
+                "name": "B2III.jpg",
+                "caption": "Make man wash taxi",
+            },
+            {
+                "name": "B3I.jpg",
+                "caption": "Burn self with hot coffee",
+            },
+            {
+                "name": "B3II.jpg",
+                "caption": "Push cholesterol to the limit with triple cheeseburger meal",
+            },
+            {
+                "name": "B3III.jpg",
+                "caption": "Save half of cheeseburger for potential employer",
+            },
+            {
+                "name": "C1I.jpg",
+                "caption": "Be impressed by man’s initiative and hire him",
+            },
+            {
+                "name": "C1II.jpg",
+                "caption": "Not interview man because he unwittingly stole potential employer’s car",
+            },
+            {
+                "name": "C1III.jpg",
+                "caption": "Call police",
+            },
+            {
+                "name": "C2I.jpg",
+                "caption": "Outrun police and begin a life on the lam",
+            },
+            {
+                "name": "C2II.jpg",
+                "caption": "Bail from car and hide in sewer",
+            },
+            {
+                "name": "C2III.jpg",
+                "caption": "Get arrested",
+            },
+            {
+                "name": "C3I.jpg",
+                "caption": "Get arrested in drive-thru",
+            },
+            {
+                "name": "C3II.jpg",
+                "caption": "Abandon stolen car in parking lot",
+            },
+            {
+                "name": "C3III.jpg",
+                "caption": "Take stolen car and cheeseburger to job interview",
+            },
+            {
+                "name": "A1Iend.jpg",
+                "caption": "Man decides friendship is better than any job and never gets of bus.",
+                "success": "true",
+            },
+            {
+                "name": "A1IIend.jpg",
+                "caption": "Man forgets to silence cell phone in interview. Man does not get second interview.",
+                "success": "true",
+            },
+            {
+                "name": "A1IIIend.jpg",
+                "caption": "Man infects potential employer via handshake. Potential employer falls ill and never calls man back.",
+                "success": "false",
+            },
+            {
+                "name": "A2Iend.jpg",
+                "caption": "Man is picked up by van with out-of-state plates. Man is never heard from again.",
+                "success": "false",
+            },
+            {
+                "name": "A2IIend.jpg",
+                "caption": "Man is not accustomed to exercise. Man collapses on sidewalk.",
+                "success": "true",
+            },
+            {
+                "name": "A2IIIend.jpg",
+                "caption": "Man enjoys a cheeseburger and has sudden realization that his failure to commit in relationships stems from his own deeply held insecurities and that he and Tara should probably get back together.",
+                "success": "true",
+            },
+            {
+                "name": "A3Iend.jpg",
+                "caption": "Man is slapped and called an impolite name.",
+                "success": "true",
+            },
+            {
+                "name": "A3IIend.jpg",
+                "caption": "Man thinks the world suddenly feels a little less cold and for the first time notices the different shades of yellow in a nearby flower.",
+                "success": "true",
+            },
+            {
+                "name": "A3IIIend.jpg",
+                "caption": "Woman’s personality is so-so, and man counts down the seconds until they finish their burgers and go their separate ways.",
+                "success": "false",
+            },
+            {
+                "name": "B1Iend.jpg",
+                "caption": "Man’s resume was in his briefcase. Man does not get a second interview.",
+                "success": "false",
+            },
+            {
+                "name": "B1IIend.jpg",
+                "caption": "Man decides to roll with it and interview for job at wrong address. Man gets job.",
+                "success": "true",
+            },
+            {
+                "name": "B1IIIend.jpg",
+                "caption": "Man interviews well but is unimpressed with salary offer. He feels he is entitled to more even though he has no prior experience in the field. Man declines job offer.",
+                "success": "true",
+            },
+            {
+                "name": "B2Iend.jpg",
+                "caption": "Man actually has money to pay the taxi driver but wanted to save it for lunch instead. Man eats lunch at McDonalds.",
+                "success": "true",
+            },
+            {
+                "name": "B2IIend.jpg",
+                "caption": "Persuasive taxi driver friends get even more than the fare out of man. Man resolves to try Uber next time.",
+                "success": "false",
+            },
+            {
+                "name": "B2IIIend.jpg",
+                "caption": "Man impresses taxi driver with washing abilities. Man is offered job as taxi driver.",
+                "success": "true",
+            },
+            {
+                "name": "B3Iend.jpg",
+                "caption": "Man sues McDonalds for making hot coffee, wins a million dollars and never has to work again.",
+                "success": "true",
+            },
+            {
+                "name": "B3IIend.jpg",
+                "caption": "Man has heart attack.",
+                "success": "false",
+            },
+            {
+                "name": "B3IIIend.jpg",
+                "caption": "Man offers half a cheeseburger to potential employer. Man does not get second interview.",
+                "success": "false",
+            },
+            {
+                "name": "C1Iend.jpg",
+                "caption": "Man returns stolen car and everyone laughs it off.",
+                "success": "true",
+            },
+            {
+                "name": "C1IIend.jpg",
+                "caption": "Man waits until potential employer arrives. Man is recognized, detained and arrested.",
+                "success": "false",
+            },
+            {
+                "name": "C1IIIend.jpg",
+                "caption": "Man tells long-winded story of how he actually should have been valedictorian in high school, but there was that one teacher that didn’t like him. Man is arrested before he finishes story.",
+                "success": "true",
+            },
+            {
+                "name": "C2Iend.jpg",
+                "caption": "Man changes name and wears disguise, settles into a quiet life as a beekeeper in the Catskills.",
+                "success": "true",
+            },
+            {
+                "name": "C2IIend.jpg",
+                "caption": "Man takes a good long look around the sewer, reflects on some of the decisions he’s made, decides to pursue an online degree.",
+                "success": "false",
+            },
+            {
+                "name": "C2IIIend.jpg",
+                "caption": "Man does his time, is released early for good behavior and becomes an outspoken advocate for prison reform.",
+                "success": "false",
+            },
+            {
+                "name": "C3Iend.jpg",
+                "caption": "Man decides that if he has to go down, he might as well go down in style. Man orders a large fries.",
+                "success": "false",
+            },
+            {
+                "name": "C3IIend.jpg",
+                "caption": "Man notices that McDonalds is hiring. Man applies, starts working immediately.",
+                "success": "true",
+            },
+            {
+                "name": "C3IIIend.jpg",
+                "caption": "Potential employer is at first put off by the whole stolen car thing, but lets it slide since the man brought a cheeseburger. Man gets job.",
+                "success": "true",
             },
         ],
     },
@@ -51,6 +332,60 @@
                 "iA": "C1.jpg",
                 "iB": "C2.jpg",
                 "iC": "C3.jpg",
+            },
+            {
+                "main": "A1.jpg",
+                "iA": "A1I.jpg",
+                "iB": "A1II.jpg",
+                "iC": "A1III.jpg",
+            },
+            {
+                "main": "A2.jpg",
+                "iA": "A2I.jpg",
+                "iB": "A2II.jpg",
+                "iC": "A2III.jpg",
+            },
+            {
+                "main": "A3.jpg",
+                "iA": "A3I.jpg",
+                "iB": "A3II.jpg",
+                "iC": "A3III.jpg",
+            },
+            {
+                "main": "B1.jpg",
+                "iA": "B1I.jpg",
+                "iB": "B1II.jpg",
+                "iC": "B1III.jpg",
+            },
+            {
+                "main": "B2.jpg",
+                "iA": "B2I.jpg",
+                "iB": "B2II.jpg",
+                "iC": "B2III.jpg",
+            },
+            {
+                "main": "B3.jpg",
+                "iA": "B3I.jpg",
+                "iB": "B3II.jpg",
+                "iC": "B3III.jpg",
+            },
+            {
+                "main": "C1.jpg",
+                "iA": "C1I.jpg",
+                "iB": "C1II.jpg",
+                "iC": "C1III.jpg",
+            },
+            {
+                "main": "C2.jpg",
+                "iA": "C2I.jpg",
+                "iB": "C2II.jpg",
+                "iC": "C2III.jpg",
+            },
+            {
+                "main": "C3.jpg",
+                "iA": "C3I.jpg",
+                "iB": "C3II.jpg",
+                "iC": "C3III.jpg",
             },
         ]
     }
