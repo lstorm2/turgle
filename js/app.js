@@ -1,10 +1,8 @@
 /* provides the layout of each screen */
 $main_screen = $([
-   "<div id='main_image'>",
-   "    <div class='image' id='main'>",
-   "        <img src='' />  ",
-   "        <p></p>",
-   "    </div>",
+   "<div class='main_image image' id='main'>",
+   "    <img src='' />  ",
+   "    <p></p>",
    "</div>",
    "<div class='prompt'>",
    "    <p></p>",
@@ -24,23 +22,28 @@ $main_screen = $([
 ].join("\n"));
 
 $result_screen = $([
-   "<div id='main_image'>",
-   "    <div class='image' id='main'>",
-   "        <img src='' />  ",
-   "        <p></p>",
-   "    </div>",
+   "<div class='main_image image' id='main'>",
+   "    <img src='' />  ",
+   "    <p></p>",
    "</div>"
 ].join("\n"));
 
 $final_screen = $([
-   "<div class='prompt'>",
+   "<div id='final_msg'>",
    "    <p></p>",
+   "    <button type='button' onClick='restart()'>Restart</button>",
    "</div>",
 ].join("\n"));
 
 String.prototype.splice = function(idx, rem, str) {
     return this.slice(0, idx) + str + this.slice(idx + Math.abs(rem));
 };
+
+function restart() {
+    $main_screen.children('img').removeAttr('src');
+    $('#wrapper').empty();
+    init_turgle();
+}
 
 function getJsonObject(data, key, val) {
     var i, len = data.length;
@@ -61,14 +64,14 @@ function loadScreen(option, json) {
         /* load the result screen */
         $("#wrapper").empty().append($result_screen);
         option = option.splice(option.length - 4, 0, "end");
-        $("#main_image img").attr("src", path + option);
+        $(".main_image img").attr("src", path + option);
         var caption = getJsonObject(json.images.image, "name", option).caption;
-        $("#main_image p").text(caption);
-        $("#main_image img").click(function() {
-            var success = getJsonObject(json.images.image, "success", "true");
+        $(".main_image p").text(caption);
+        $(".main_image img").click(function() {
+            var success = getJsonObject(json.images.image, "name", option).success;
             $("#wrapper").empty().append($final_screen);
             var msg = (success == "true") ? json.success_str : json.fail_str;
-            $(".prompt p").text(msg);
+            $("#final_msg p").text(msg);
             if (success == "true") {
                 // TODO Arduino call
             }
@@ -84,8 +87,8 @@ function loadScreen(option, json) {
     $(".prompt").children('p').text(json.prompt);
 }
 
-$(document).ready(function() {
-    $("#wrapper").append($main_screen);
+function init_turgle() {
+    $("#wrapper").empty().append($main_screen);
     $.getJSON("turgle_map.json", function(json) {
         loadScreen(json.first, json);
     });
@@ -95,4 +98,4 @@ $(document).ready(function() {
             loadScreen(selected, json);
         });
     });
-});
+}

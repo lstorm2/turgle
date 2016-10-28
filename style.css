@@ -1,16 +1,16 @@
 /* Turgle stylesheet */
 
 #wrapper {
-    margin: 0 auto;
+    margin: 50px auto;
     width: 960px;
-    height: 650px;
+    height: 670px;
     font-family: Arial, "sans serif";
 }
 
-#main_image {
+.main_image {
     margin: 0 auto;
     width: 240px;
-    height: 260px;
+    height: 280px;
     margin-top: 16px;
 }
 
@@ -29,7 +29,7 @@ p {
 
 .image p {
 	text-align: left;
-    height: 20px;
+    height: 40px;
     width: 240px;
 }
 
@@ -45,4 +45,13 @@ img {
     font-size: 50px;
     margin-bottom: 30px;
     text-align: center;
+}
+
+#final_msg {
+    margin: 100px auto;
+    text-align: center;
+}
+
+#final_msg button {
+    margin-top: 50px;
 }
