@@ -1,5 +1,23 @@
 {
-    "name"    : "turgle",
+    "name" : "turgle",
+    "productName" : "turgle",
     "version" : "0.1.0",
-    "main"    : "main.js"
+    "main"    : "main.js",
+    "description": "A simple game",
+    "scripts": {
+        "start": "electron ."
+    },
+    "repository": "https://github.com/skodje/turgle",
+    "keywords": [
+        "Electron",
+        "quick",
+        "start",
+        "tutorial",
+        "demo"
+    ],
+    "author": "Lars Skodje",
+    "license": "CC0-1.0",
+    "devDependencies": {
+        "electron": "^1.4.1"
+    }
 }
