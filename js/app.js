@@ -1,26 +1,4 @@
-/* provides the layout of each screen */
-$main_screen = $([
-   "<div class='main_image image' id='main'>",
-   "    <img src='' />  ",
-   "    <p></p>",
-   "</div>",
-   "<div class='prompt'>",
-   "    <p></p>",
-   "</div>",
-   "<div class='image option' id='iA'>",
-   "    <img src='' />",
-   "    <p></p>",
-   "</div>",
-   "<div class='image option' id='iB'>",
-   "    <img src='' />",
-   "    <p></p>",
-   "</div>",
-   "<div class='image option' id='iC'>",
-   "    <img src='' />",
-   "    <p></p>",
-   "</div>"
-].join("\n"));
-
+/* provides the layout of each result screens */
 $result_screen = $([
    "<div class='main_image image' id='main'>",
    "    <img src='' />  ",
@@ -40,9 +18,7 @@ String.prototype.splice = function(idx, rem, str) {
 };
 
 function restart() {
-    $main_screen.children('img').removeAttr('src');
-    $('#wrapper').empty();
-    init_turgle();
+    window.location.replace("directions.html");
 }
 
 function getJsonObject(data, key, val) {
@@ -88,9 +64,9 @@ function loadScreen(option, json) {
 }
 
 function init_turgle() {
-    $("#wrapper").empty().append($main_screen);
     $.getJSON("turgle_map.json", function(json) {
         loadScreen(json.first, json);
+        $("#header").text(json.header);
     });
     $(".option img").click(function() {
         var selected = $(this).attr("src");

@@ -4,3 +4,5 @@
 ### extensions ###
 *.swp
 
+### electron ###
+node_modules/

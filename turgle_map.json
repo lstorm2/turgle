@@ -1,5 +1,6 @@
 {
-    "prompt" : "An American would..",
+    "prompt" : "An American would...",
+    "header" : "Going to a job interview!",
     "first"  : "1.jpg",
     "success_str": "Congratulations! You understand American culture!",
     "fail_str": "Sorry, you don't understand American Culture. Please try again.",
@@ -170,13 +171,13 @@
             },
             {
                 "name": "A1Iend.jpg",
-                "caption": "Man decides friendship is better than any job and never gets of bus.",
+                "caption": "Man decides friendship is better than any job and never gets off the bus.",
                 "success": "true",
             },
             {
                 "name": "A1IIend.jpg",
                 "caption": "Man forgets to silence cell phone in interview. Man does not get second interview.",
-                "success": "true",
+                "success": "false",
             },
             {
                 "name": "A1IIIend.jpg",

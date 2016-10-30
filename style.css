@@ -5,6 +5,7 @@
     width: 960px;
     height: 670px;
     font-family: Arial, "sans serif";
+    text-align: center;
 }
 
 .main_image {
@@ -28,7 +29,6 @@ p {
 }
 
 .image p {
-	text-align: left;
     height: 40px;
     width: 240px;
 }
@@ -42,7 +42,7 @@ img {
 
 .prompt {
     height: 50px;
-    font-size: 50px;
+    font-size: 32px;
     margin-bottom: 30px;
     text-align: center;
 }
