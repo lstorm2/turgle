@@ -1,5 +1,6 @@
 {
-    "prompt" : "An American would...",
+    "main_prompt" : "An American would...",
+    "prompt" : "Next, an American would...",
     "header" : "Going to a job interview!",
     "first"  : "1.jpg",
     "success_str": "Congratulations! You understand American culture!",
