@@ -13,6 +13,8 @@ body {
 
 #header {
     margin: 50px auto;
+    width: 960px;
+    height: auto;
 }
 
 .main_image {
