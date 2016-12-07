@@ -66,12 +66,33 @@ function loadScreen(option, json, prompt) {
 function init_turgle() {
     $.getJSON("turgle_map.json", function(json) {
         loadScreen(json.first, json, json.main_prompt);
-        $("#header").text(json.header);
     });
     $(".option img").click(function() {
         var selected = $(this).attr("src");
         $.getJSON("turgle_map.json", function(json) {
             loadScreen(selected, json, json.prompt);
         });
+    });
+}
+
+// GPIO functions
+function gpio_pin_high(pin) {
+    gpio_pin(pin, 1);
+}
+
+function gpio_pin_low(pin) {
+    gpio_pin(pin, 0);
+}
+
+function gpio_pin(pin, val) {
+    var gpio = require("pi-gpio");
+    gpio.open(pin, "output", function(err) {
+        if (err) {
+            console.log(err);
+        } else {
+            gpio.write(pin, val, function() {
+                gpio.close(pin);
+            });
+        }
     });
 }
