@@ -1,4 +1,4 @@
-A simple game
+# Turgle
 
 To build and launch:
 ```
@@ -6,26 +6,20 @@ npm build
 npm start
 ```
 
-To generate package (OSX):
+To generate installer for Raspberry PI (Raspbian)
 
 ```
-electron-packager . turgle --platform=darwin
-```
-
-To generate package (RPI):
-
-```
-electron-packager . turgle --platform=linux --arch=armv7l
+npm run build
+npm run deb
 ```
 
 Notes to get it running on Raspberry PI
 
 1) Create package with above command
 
-2) Install on pi with this command:
+2) Install on the PI
 ```
-npm install -g electron-installer-debian; # may need sudo
-electron-installer-debian --src turgle-linux-armv7l/ --dest ./install --arch armhf
+sudo dpkg -i turgle_0.2.0_armhf.deb
 ```
 3) The game requires [gpio-admin](https://github.com/quick2wire/quick2wire-gpio-admin)
 
@@ -37,4 +31,3 @@ electron-installer-debian --src turgle-linux-armv7l/ --dest ./install --arch arm
 ```
 npm install -g pi-gpio
 ```
-

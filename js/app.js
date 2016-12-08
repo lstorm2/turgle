@@ -1,9 +1,10 @@
 /* provides the layout of each result screens */
 $result_screen = $([
-   "<div class='main_image image' id='main'>",
+   "<div id='result_image'>",
    "    <img src='' />  ",
    "    <p></p>",
-   "</div>"
+   "</div>",
+   "<button id='result_btn' type='button'>Next</button>",
 ].join("\n"));
 
 $final_screen = $([
@@ -40,10 +41,10 @@ function loadScreen(option, json, prompt) {
         /* load the result screen */
         $("#wrapper").empty().append($result_screen);
         option = option.splice(option.length - 4, 0, "end");
-        $(".main_image img").attr("src", path + option);
+        $("#result_image img").attr("src", path + option);
         var caption = getJsonObject(json.images.image, "name", option).caption;
-        $(".main_image p").text(caption);
-        $(".main_image img").click(function() {
+        $("#result_image p").text(caption);
+        $("#result_btn").click(function() {
             var success = getJsonObject(json.images.image, "name", option).success;
             $("#wrapper").empty().append($final_screen);
             var msg = (success == "true") ? json.success_str : json.fail_str;
