@@ -50,7 +50,7 @@ function loadScreen(option, json, prompt) {
             var msg = (success == "true") ? json.success_str : json.fail_str;
             $("#final_msg p").text(msg);
             if (success == "true") {
-                // TODO Arduino call
+                gpio_pin_high(32);
             }
         }).css("cursor", "pointer");
         return;
